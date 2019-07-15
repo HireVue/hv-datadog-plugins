@@ -1,0 +1,5 @@
+init_config:
+
+instances:
+  - token: VaultTokenHere
+    min_collection_interval: 300

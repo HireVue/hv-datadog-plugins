@@ -1,0 +1,9 @@
+init_config:
+
+instances:
+  - api_key: 1234567890
+    min_collection_interval: 300
+    account: overarching_account_name
+    user: sendgrid_username_the_apikey_is_for
+    tags:
+    - environment: dev
