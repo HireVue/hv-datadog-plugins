@@ -74,10 +74,13 @@ path "sys/internal/counters/requests" {
 From this policy generate a token that will be used to access the endpoint.
 
 
-| Configuration | Description |
-|---------------|-------------|
-| token | The vault token |
-| min_collection_interval | Since requests to the requests api count against your requests license set the collection interval to something sane. |
+| Configuration | Default | Description |
+|---------------|---------|-------------|
+| token | "" | The vault token |
+| min_collection_interval | 300 | Since requests to the requests api count against your requests license set the collection interval to something sane. |
+| hostname | socket.gethostname() | hostname of the vault server to connect to |
+| port | 8200 | Port that the vault service is running on | 
+| ssl | True | Boolean whether to use http or https when connecting to vault |
 
 ### Example
 ```
